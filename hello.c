@@ -1,0 +1,20 @@
+#include<linux/init.h>
+#include<linux/module.h>
+
+
+static int __init hello_init(void){
+  printk("hello module loaded: HELLO WORLD!");
+  return 0;
+}
+
+static void __exit hello_exit(void){
+  printk("hello module unloaded: BYE WORLD!");
+}
+
+module_init(hello_init);
+module_exit(hello_exit);
+
+
+MODULE_AUTHOR("Ravi Kumar");
+MODULE_LICENSE("GPL");
+MODULE_DESCRIPTION("hello World driver");
