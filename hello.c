@@ -3,12 +3,12 @@
 
 
 static int __init hello_init(void){
-  printk("hello module loaded: HELLO WORLD!");
+  printk("hello module loaded: HELLO WORLD!\n");
   return 0;
 }
 
 static void __exit hello_exit(void){
-  printk("hello module unloaded: BYE WORLD!");
+  printk("hello module unloaded: BYE WORLD!\n");
 }
 
 module_init(hello_init);
