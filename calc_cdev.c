@@ -1,3 +1,11 @@
+/*
+    a character device that registers itself with a major number and prvides support for calculation on through ioctl commands.    
+
+
+
+
+*/
+
 #include<linux/init.h>
 #include<linux/module.h>
 #include<linux/fs.h>

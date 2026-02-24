@@ -1,3 +1,9 @@
+/*
+    a header file that defines the magic code, the data structure to be used and the operations for the calculator.
+
+*/
+
+
 #ifndef CHAR_CALC_IOCTL_H
 #define CHAR_CALC_IOCTL_H
 

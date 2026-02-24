@@ -1,3 +1,11 @@
+/*
+    a simple character device driver to test read and write operations on the driver.
+    it registers itself with a major number provided by the kernel.
+    if a device file exists in the /dev/ folder with the same major number,
+    the read and write features can be invoked with cat and echo "input" > /dev/<device_name> respectively.
+
+*/
+
 #include<linux/init.h>
 #include<linux/module.h>
 #include<linux/fs.h>

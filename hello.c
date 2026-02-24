@@ -1,3 +1,7 @@
+/*
+     a simple driver module that which logs hello world on the kernel when loaded and by world when unloaded.
+     nothing more.
+*/
 #include<linux/init.h>
 #include<linux/module.h>
 
